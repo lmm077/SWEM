@@ -20,7 +20,7 @@ def main():
 
 
 def env_setup():
-    os.environ['MASTER_ADDR'] = '127.0.0.1'
+    #os.environ['MASTER_ADDR'] = '127.0.0.1'
     os.environ['MASTER_PORT'] = '18888'
     rank = 0
     num_gpu = 1
@@ -49,10 +49,10 @@ if __name__ == '__main__':
                         help='Use AMP during training or not.')
 
     # model parameters
-    parser.add_argument("--model", dest='MODEL_NAME', default='MEM', type=str,
-                        help='Model name [SWEM|STCN|STM|EM|WEM].')
+    parser.add_argument("--model", dest='MODEL_NAME', default='SMEM', type=str,
+                        help='Model name.')
     parser.add_argument("--backbone", dest='BACKBONE', default='resnet50', type=str,
-                        help='The backbone for key encoder [resnet50|resnet18].')
+                        help='The backbone for key encoder.')
     parser.add_argument("--key_dim", dest='KEYDIM', default=128, type=int,
                         help='The number of key dimension [64|128].')
     parser.add_argument('--resume', dest='resume', type=str, default=None,
@@ -64,11 +64,11 @@ if __name__ == '__main__':
     parser.add_argument("--stage", dest='STAGE', default=0, type=int,
                         help='Training stage [0:Image|1:DAVIS|2:YTVOS19|3:DAVIS+YTVOS19].')
     parser.add_argument("--stage_name", dest='STAGE_NAME', default='S0', type=str,
-                        help='Training stage [S0|S1|S2|S3|S4|S5|S01|S02|S03|S04|S05].')
+                        help='Training stage [S0|S1|S2|S3].')
     parser.add_argument("--num_obj", dest='MAX_NUM_OBJS', default=2, type=int,
-                        help='The number of maximum number of objects during training [>1].')
-    parser.add_argument("--batch_size", dest='batch_size', default=4, type=int,
-                        help='The number of batch_size for each GPU.')
+                        help='The number of maximum number of objects during training [>=1].')
+    parser.add_argument("--batch_size", dest='batch_size', default=8, type=int,
+                        help='The number of batch_size.')
     parser.add_argument("--lr", dest='BASE_LR', default=2e-5, type=float,
                         help='Learning rate.')
     parser.add_argument('--backend', dest='backend', type=str, default='baseline',
