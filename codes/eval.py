@@ -12,10 +12,10 @@ def get_args():
     parser = argparse.ArgumentParser(description='Eval VOSNet')
 
     # model parameters
-    parser.add_argument("--model", dest='MODEL_NAME', default='MEM', type=str,
-                        help='Model name [SWEM|STCN|STM|EM|WEM].')
+    parser.add_argument("--model", dest='MODEL_NAME', default='SWEM', type=str,
+                        help='Model name.')
     parser.add_argument("--backbone", dest='BACKBONE', default='resnet50', type=str,
-                        help='The backbone for key encoder [resnet50|resnet18].')
+                        help='The backbone for key encoder.')
     parser.add_argument("--key_dim", dest='KEYDIM', default=128, type=int,
                         help='The number of key dimension [64|128].')
     parser.add_argument('--resume', dest='RESUME', type=str, default=None,
@@ -23,11 +23,11 @@ def get_args():
 
     # eval parameters
     parser.add_argument("--stage", dest='STAGE', default=0, type=int,
-                        help='Training stage [0:Image|1:DAVIS|2:YTVOS18|3:YTVOS19|4:DAVIS+YTVOS18|5:DAVIS+YTVOS19].')
+                        help='Training stage [0:Image|1:DAVIS|2:YTVOS19|3:DAVIS+YTVOS19].')
     parser.add_argument("--stage_name", dest='STAGE_NAME', default='S0', type=str,
-                        help='Training stage [S0|S1|S2|S3|S4|S5|S01|S02|S03|S04|S05].')
+                        help='Training stage [S0|S1|S2|S3].')
     parser.add_argument("--num_obj", dest='MAX_NUM_OBJS', default=2, type=int,
-                        help='The number of maximum number of objects during training [>1].')
+                        help='The number of maximum number of objects during training [>=1].')
     parser.add_argument('--backend', dest='backend', type=str, default='baseline',
                         help='The name of exp.')
     parser.add_argument('--eval_set', dest='eval_set', type=str, default='DAVIS16', required=True,
@@ -45,7 +45,7 @@ def get_args():
     parser.add_argument("--top_l", dest='TOPL', default=64, type=int,
                         help='Top-l matching scores, <= number of bases.')
     parser.add_argument('--tau', dest='EM_TAU', default=0.05, type=float,
-                        help='The tau in WEM.')
+                        help='The tau in SWEM.')
 
     return parser.parse_args()
 
