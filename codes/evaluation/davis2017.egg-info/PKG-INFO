@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: davis2017
+Version: 0.1.0
+Summary: Evaluation Framework for DAVIS 2017 Semi-supervised and Unsupervised used in the DAVIS Challenges
+Home-page: https://github.com/davisvideochallenge/davis2017-evaluation
+Author: Sergi Caelles
+Author-email: scaelles@vision.ee.ethz.ch
+License: GPL v3
+Description: UNKNOWN
+Keywords: segmentation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown

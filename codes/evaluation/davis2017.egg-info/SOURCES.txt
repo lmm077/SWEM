@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+davis2017.egg-info/PKG-INFO
+davis2017.egg-info/SOURCES.txt
+davis2017.egg-info/dependency_links.txt
+davis2017.egg-info/requires.txt
+davis2017.egg-info/top_level.txt

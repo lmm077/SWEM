@@ -1,0 +1,10 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: scikit-learn in /home/lin-zh/.conda/envs/VOS/lib/python3.6/site-packages/scikit_learn-0.23.2-py3.6-linux-x86_64.egg (0.23.2)
+Collecting joblib>=0.11
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fc/c9/f58220ac44a1592f79a343caba12f6837f9e0c04c196176a3d66338e1ea8/joblib-0.17.0-py3-none-any.whl (301 kB)
+Requirement already satisfied: numpy>=1.13.3 in /home/lin-zh/.conda/envs/VOS/lib/python3.6/site-packages (from scikit-learn) (1.19.2)
+Requirement already satisfied: scipy>=0.19.1 in /home/lin-zh/.conda/envs/VOS/lib/python3.6/site-packages (from scikit-learn) (1.5.3)
+Collecting threadpoolctl>=2.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f7/12/ec3f2e203afa394a149911729357aa48affc59c20e2c1c8297a60f33f133/threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Installing collected packages: joblib, threadpoolctl
+Successfully installed joblib-0.17.0 threadpoolctl-2.1.0
