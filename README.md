@@ -2,8 +2,7 @@
 
 This repository is the official implementation of SWEM: Towards Real-Time Video Object Segmentation with Sequential Weighted Expectation-Maximization (CVPR2022)
 
-%![](https://github.com/lmm077/SWEM/blob/main/assets/pipeline.pdf)
-![avatar](https://github.com/lmm077/SWEM/blob/main/assets/pipeline.pdf)
+![](https://github.com/lmm077/SWEM/blob/main/assets/pipeline.pdf)
 
 
 ## 1. Requirements
