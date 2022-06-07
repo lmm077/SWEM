@@ -1,0 +1,13 @@
+easydict
+numpy
+tensorboardX
+scipy
+opencv-python
+pillow>=7.2.0
+opencv-contrib-python>=3.4.2.17
+opencv-python>=3.4.2.17
+torch>=1.8.0
+torchvision>=0.9.0
+scikit-image
+pandas
+cython
