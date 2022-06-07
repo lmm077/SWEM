@@ -35,11 +35,11 @@ Main training and testing
 sh train_swem_s3.sh
 ```
 
-## 4. License
+## 3. License
 
 This repository is released for academic use only. If you want to use our codes for commercial products, please contact linchrist@163.com in advance.
 
-## 5. Related Repos
+## 4. Related Repos
 
 https://github.com/seoungwugoh/STM
 
