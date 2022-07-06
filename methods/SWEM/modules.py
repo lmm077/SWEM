@@ -102,21 +102,10 @@ class SWEMCore(nn.Module):
         maxes = torch.max(maxes, dim=2, keepdim=True)[0]  # B, N, 1, HW, 1
         z_exp = torch.exp((z - maxes) / self.tau)       # B, N, 2, HW, L
         # mean
-        #sum_exp = torch.sum(z_exp, dim=-1, keepdim=True)         # B, N, 2, HW, 1
-        # chose topk scores
-        z_topk = torch.topk(z_exp, k=5, dim=-1)[0]      # B, N, 2, HW, k
-        sum_exp = torch.sum(z_topk, dim=-1, keepdim=True)        # B, N, 2, HW, 1
+        sum_exp = torch.sum(z_exp, dim=-1, keepdim=True)         # B, N, 2, HW, 1
         # getting foreground and background probabilities of all pixels
         props = sum_exp / (torch.sum(sum_exp, dim=2, keepdim=True))  # B, N, 2, HW, 1
-        # soft_masks
-        #inverse_props = torch.stack([props[:, :, 1], props[:, :, 0]], dim=2)
-        L = kappa.shape[-1]
-        masks = masks.expand(-1, -1, -1, -1, L // 2)
-        #weights = masks * inverse_props
         weights = masks * (1-props)
-        #weights = weights.expand(-1, -1, -1, -1, L)
-        #weights = weights.expand(-1, -1, -1, -1, L // 2)             # B, N, 2, HW, L/2
-        weights = torch.cat([weights, masks], dim=-1)                # B, N, 2, HW, L; hard, 0:L//2, norm, L//2:L
         
         return weights
 
