@@ -7,7 +7,7 @@ This repository is the official implementation of SWEM: Towards Real-Time Video 
 
 ## 1. Requirements
 
-We use  one NVIDIA V100 (16 GB Memory), whereas two 1080ti GPUs are satisfied. Note that if you use one 1080ti, you can reduce the batch size and increase number of iterations.
+We use  one NVIDIA V100 (16 GB Memory), whereas two 1080ti GPUs are also satisfied. Note that if you use one 1080ti, you can reduce the batch size and increase number of iterations orrespondingly.
 To install requirements, run:
 
 ```bash
