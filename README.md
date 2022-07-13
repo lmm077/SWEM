@@ -20,13 +20,13 @@ pip3 install -r requirements.txt
 
 #### Image Data
 
-You can download and process image datasets from [STCN](https://github.com/hkchengrex/STCN) or directly download from [Google Drive](https://drive.google.com/file/d/12hfHQ5cBflEearH7rWiJs6q-B00UyQhx/view?usp=sharing)
+Download and process image datasets from [STCN](https://github.com/hkchengrex/STCN) or directly download from [Google Drive](https://drive.google.com/file/d/12hfHQ5cBflEearH7rWiJs6q-B00UyQhx/view?usp=sharing)
 
 #### Video Data
 
-You need download the [DAVIS17-TrainVal](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) and  [YouTube-VOS](https://youtube-vos.org/) datasets for main-training and testing. 
+Download the [DAVIS17-TrainVal](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) and  [YouTube-VOS](https://youtube-vos.org/) datasets for main-training and testing. 
 
-You need modified the data path in configs/config.py
+Modify the data path in configs/config.py
 
 ### Training and Testing
 
