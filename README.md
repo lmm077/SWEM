@@ -51,11 +51,12 @@ https://github.com/hkchengrex/STCN
 Codes of data samplers are from https://github.com/dvlab-research/Simple-SR
 
 ## 5. Citation
-‘’‘@inproceedings{SWEM,
+```
+  @inproceedings{SWEM,
   title={SWEM: Towards Real-Time Video Object Segmentation with Sequential Weighted Expectation-Maximization},
   author={Lin, Zhihui and Yang, Tianyu and Li, Maomao and Wang, Ziyu and Yuan, Chun and Jiang, Wenhao and Liu, Wei},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={1362--1372},
   year={2022}
 }
-’‘’
+```
