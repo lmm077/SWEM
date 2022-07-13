@@ -58,5 +58,5 @@ Codes of data samplers are from https://github.com/dvlab-research/Simple-SR
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={1362--1372},
   year={2022}
-}
+  }
 ```
