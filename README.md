@@ -15,9 +15,7 @@ This repository is the official implementation of SWEM: Towards Real-Time Video 
 pip3 install -r requirements.txt
 ```
 
-## 2. RUN
-
-### Datasets
+## 2. Preparing datasets
 
 - Image Data: Download and process image datasets from [STCN](https://github.com/hkchengrex/STCN) or directly download from [Google Drive](https://drive.google.com/file/d/12hfHQ5cBflEearH7rWiJs6q-B00UyQhx/view?usp=sharing)
 
@@ -25,7 +23,7 @@ pip3 install -r requirements.txt
 
 - Modify the data path in configs/config.py
 
-### Training and Testing
+## 3. Training and Testing
 
 - Main training and testing
 
@@ -33,11 +31,11 @@ pip3 install -r requirements.txt
 sh train_swem_s3.sh
 ```
 
-## 3. License
+## 4. License
 
 This repository is released for academic use only. If you want to use our codes for commercial products, please contact linchrist@163.com in advance.
 
-## 4. Related Repos
+## 5. Related Repos
 
 https://github.com/seoungwugoh/STM
 
@@ -47,7 +45,7 @@ https://github.com/hkchengrex/STCN
 
 Codes of data samplers are from https://github.com/dvlab-research/Simple-SR
 
-## 5. Citation
+## 6. Citation
 ```
   @inproceedings{SWEM,
   title={SWEM: Towards Real-Time Video Object Segmentation with Sequential Weighted Expectation-Maximization},
